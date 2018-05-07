@@ -1,7 +1,7 @@
-## Required 
+## Required 
 @angular/cli 1.7
 
-## Before start
+## Before start
 npm i 
 
 ## Client Side Rendering 
