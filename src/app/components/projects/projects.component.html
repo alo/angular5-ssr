@@ -1,0 +1,31 @@
+<h2>Latest projects</h2>
+
+<div fxLayout='row wrap'
+  fxFlex
+  fxLayoutAlign="start"
+  fxLayoutGap="20px">
+  <div fxFlex="45%"
+    *ngFor="let project of projects">
+    <mat-card style="margin-bottom: 10px">
+      <mat-card-header>
+        <mat-card-title>Coderty</mat-card-title>
+        <mat-card-subtitle>Yes, we do!</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <div style="width: 100%; text-align: center;">
+          <img matCardImage style="width: 200px; margin: 0px"
+            src="assets/coderty-logo.png">
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi reprehenderit ipsa porro dolorum libero nobis, architecto
+        non voluptate! Ex non consequuntur sed quasi eos explicabo et libero sint veniam unde.
+
+      </mat-card-content>
+
+      <mat-card-actions align="end">
+        <alo-social-links [socialLinks]="project.socialLinks"></alo-social-links>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+</div>

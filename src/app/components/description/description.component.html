@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-content>
+    <div fxLayout="row">
+      <div fxFlex="15%">
+        <img class="avatar"
+          src="../../../assets/alo.jpeg"
+          alt="">
+      </div>
+      <div fxFlex
+        fxFlexOffset="30px">
+        <h1> Hi! I'm @alo </h1>
+        <div [innerHtml]="mainDescription"></div>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <alo-social-links [socialLinks]="socialLinks"></alo-social-links>
+  </mat-card-actions>
+</mat-card>
