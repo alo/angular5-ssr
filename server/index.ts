@@ -1,58 +1,22 @@
 import 'zone.js/dist/zone-node';
-import 'reflect-metadata';
-import { enableProdMode } from '@angular/core';
+import * as functions from 'firebase-functions';
 import * as express from 'express';
-import { join } from 'path';
+import { renderModuleFactory } from '@angular/platform-server';
+import * as fs from 'fs';
 
-// NOTE: leave this as require() since this file is built Dynamically from webpack
-const {
-  AppServerModuleNgFactory,
-  LAZY_MODULE_MAP
-} = require('./server/main.bundle');
-const DISABLE_FIREBASE = process.env.DISABLE_FIREBASE || false;
+const document = fs.readFileSync(__dirname + '/browser/index-1.html', 'utf8');
+const AppServerModuleNgFactory = require(__dirname + '/server/main.bundle')
+  .AppServerModuleNgFactory;
 
-// NgUniversalTools: Express Engine and moduleMap for lazy loading
-import { ngExpressEngine } from '@nguniversal/express-engine';
-import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
-
-import * as firebaseFunctions from 'firebase-functions';
-
-// Faster server renders w/ Prod mode (dev mode never needed)
-enableProdMode();
-// Express server
 const app = express();
-const PORT = process.env.PORT || 4000;
-const DIST_FOLDER = join(process.cwd(), DISABLE_FIREBASE ? 'dist' : './');
-app.engine(
-  'html',
-  ngExpressEngine({
-    bootstrap: AppServerModuleNgFactory,
-    providers: [provideModuleMap(LAZY_MODULE_MAP)]
-  })
-);
-app.set('view engine', 'html');
-app.set('views', join(DIST_FOLDER, 'browser'));
-
-if(DISABLE_FIREBASE){
-  // Server static files using the express server only if not using firebase hosting
-  app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
-}
-
-// All regular routes use the Universal engine
-app.get('*', (req, res) => {
-  res.render(join(DIST_FOLDER, 'browser', 'index-1.html'), {req});
+app.get('**', (req, res) => {
+  const url = req.url;
+  renderModuleFactory(AppServerModuleNgFactory, { document, url }).then(
+    html => {
+      res.set('Cache-Control', 'public, max-age=600, s-maxage=1200');
+      res.send(html);
+    }
+  );
 });
 
-if(DISABLE_FIREBASE){  
-  // Start up the Node server if not using firebase cloud functions
-  app.listen(PORT, () => {
-    console.log(`Node server listening on http://localhost:${PORT}`);
-  });
-}
-
-// Start up the Node server
-// app.listen(PORT, () => {
-//   console.log(`Node server listening on http://localhost:${PORT}`);
-// });
-
-export  let  ssr  =  DISABLE_FIREBASE  ?  null  :  firebaseFunctions.https.onRequest(app);
+export let ssr = functions.https.onRequest(app);

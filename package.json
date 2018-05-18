@@ -12,7 +12,8 @@
     "tsc:server": "tsc -p server/tsconfig.ssr.json",
     "build:client-and-server-bundles": "ng build --prod --aot && ng build --prod --aot --app 1 --output-hashing=false",
     "build:universal": "npm run build:client-and-server-bundles && npm run tsc:server",
-    "serve:universal": "DISABLE_FIREBASE=true node dist/index.js"
+    "serve:universal": "DISABLE_FIREBASE=true node dist/index.js",
+    "firebase:serve": "firebase serve --only functions,hosting"
   },
   "private": true,
   "dependencies": {
