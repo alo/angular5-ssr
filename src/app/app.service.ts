@@ -93,6 +93,12 @@ export class AppService {
             }
           ],  
         }
+      ],
+      "title":"Angular SSR",
+      "meta":[
+        { name: 'author',   content: 'alo'},
+        { name: 'keywords', content: 'angular seo, angular 5 universal, nelacantinela'},
+        { name: 'description', content: 'Angular SEO friendly app! Enjoy' }
       ]
     }
     
