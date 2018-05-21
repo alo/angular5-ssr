@@ -1,6 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css"
 
+body
+  font-family: 'Roboto', sans-serif
+  background-color: #FAFAFA
+  margin: 12px
+
 .container
   max-width: 997px
   margin: 30px auto
+
+h1
+  margin-top: 0
+  font-size: 26px
+  
+@media screen and (max-width: 599px)
+  h1 
+    text-align: center
+
+h2
+  text-align: center
+  
+.card-margin
+  margin: 12px
+
+.avatar
+  text-align: center
+  img 
+    max-width: 200px
+    margin-bottom: 24px
+
+img 
+  width: 100%
+
+.mat-card-content,
+.mat-card-header,
+.mat-card-title,
+.mat-card-subtitle
+  font-size: 16px
+
+.social-links
+  a 
+    font-size: 20px
+    line-height: 35px
+    text-decoration: none

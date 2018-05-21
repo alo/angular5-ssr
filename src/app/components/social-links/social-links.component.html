@@ -1,6 +1,8 @@
-<span *ngFor="let socialLink of socialLinks">
-  <a [href]="socialLink.link">
-    <img [src]="socialLink.imgSrc"
-      [alt]="socialLink.alt">
+<span class="social-links" *ngFor="let socialLink of socialLinks">
+  <a mat-icon-button
+    [href]="socialLink.link"
+    target="_blank"
+    color="primary">
+    <i [class]="socialLink.icon"></i>
   </a>
 </span>

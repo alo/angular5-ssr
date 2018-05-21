@@ -11,19 +11,16 @@ export class AppService {
       Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor; hodor hodor; hodor hodor - hodor, hodor, hodor hodor. `,
       socialLinks: [
         {
-          imgSrc: 'assets/twitter.png',
-          link: 'https://twitter.com/aloDev',
-          alt: 'Twitter logo'
+          icon: 'fab fa-twitter',
+          link: 'https://twitter.com/aloDev'
         },
         {
-          imgSrc: 'assets/github.png',
-          link: 'https://github.com/alo',
-          alt: 'Github logo'
+          icon: 'fab fa-github',
+          link: 'https://github.com/alo'
         },
         {
-          imgSrc: 'assets/linkedin.png',
-          link: 'https://www.linkedin.com/in/alodev/',
-          alt: 'Linkedin logo'
+          icon: 'fab fa-linkedin-in',
+          link: 'https://www.linkedin.com/in/alodev/'
         }
       ],
       projects: [
@@ -33,19 +30,16 @@ export class AppService {
           imgSrc: 'assets/coderty-logo.png',
           socialLinks: [
             {
-              imgSrc: 'assets/twitter.png',
-              link: 'https://twitter.com/aloDev',
-              alt: 'Twitter logo'
+              icon: 'fab fa-twitter',
+              link: 'https://twitter.com/aloDev'
             },
             {
-              imgSrc: 'assets/github.png',
-              link: 'https://github.com/alo',
-              alt: 'Github logo'
+              icon: 'fab fa-github',
+              link: 'https://github.com/alo'
             },
             {
-              imgSrc: 'assets/linkedin.png',
-              link: 'https://www.linkedin.com/in/alodev/',
-              alt: 'Linkedin logo'
+              icon: 'fab fa-linkedin-in',
+              link: 'https://www.linkedin.com/in/alodev/'
             }
           ]
         },
@@ -55,19 +49,16 @@ export class AppService {
           imgSrc: 'assets/coderty-logo.png',
           socialLinks: [
             {
-              imgSrc: 'assets/twitter.png',
-              link: 'https://twitter.com/aloDev',
-              alt: 'Twitter logo'
+              icon: 'fab fa-twitter',
+              link: 'https://twitter.com/aloDev'
             },
             {
-              imgSrc: 'assets/github.png',
-              link: 'https://github.com/alo',
-              alt: 'Github logo'
+              icon: 'fab fa-github',
+              link: 'https://github.com/alo'
             },
             {
-              imgSrc: 'assets/linkedin.png',
-              link: 'https://www.linkedin.com/in/alodev/',
-              alt: 'Linkedin logo'
+              icon: 'fab fa-linkedin-in',
+              link: 'https://www.linkedin.com/in/alodev/'
             }
           ]
         },
@@ -77,19 +68,16 @@ export class AppService {
           imgSrc: 'assets/coderty-logo.png',
           socialLinks: [
             {
-              imgSrc: 'assets/twitter.png',
-              link: 'https://twitter.com/aloDev',
-              alt: 'Twitter logo'
+              icon: 'fab fa-twitter',
+              link: 'https://twitter.com/aloDev'
             },
             {
-              imgSrc: 'assets/github.png',
-              link: 'https://github.com/alo',
-              alt: 'Github logo'
+              icon: 'fab fa-github',
+              link: 'https://github.com/alo'
             },
             {
-              imgSrc: 'assets/linkedin.png',
-              link: 'https://www.linkedin.com/in/alodev/',
-              alt: 'Linkedin logo'
+              icon: 'fab fa-linkedin-in',
+              link: 'https://www.linkedin.com/in/alodev/'
             }
           ]
         }

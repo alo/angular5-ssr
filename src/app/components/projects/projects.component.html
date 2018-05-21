@@ -1,31 +1,29 @@
 <h2>Latest projects</h2>
 
-<div fxLayout='row wrap'
-  fxFlex
-  fxLayoutAlign="start"
-  fxLayoutGap="20px">
-  <div fxFlex="45%"
-    *ngFor="let project of projects">
-    <mat-card style="margin-bottom: 10px">
-      <mat-card-header>
-        <mat-card-title>Coderty</mat-card-title>
-        <mat-card-subtitle>Yes, we do!</mat-card-subtitle>
-      </mat-card-header>
+<div class="projects-list">
+  <div flex fxLayout="row wrap" style="max-width: 100%;">
+    <div *ngFor="let project of projects"
+      fxFlex="O O 33.3333%"
+      fxFlex.sm="0 0 50%"
+      fxFlex.xs="0 0 100%">
+      
+      <mat-card class="card-margin">
+        <mat-card-header>
+          <mat-card-title>Coderty</mat-card-title>
+          <mat-card-subtitle>Yes, we do!</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div style="width: 100%; text-align: center;">
+            <img matCardImage style="width: 200px; margin: 0px" src="assets/coderty-logo.png">
+          </div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi reprehenderit ipsa porro dolorum libero nobis, architecto
+          non voluptate! Ex non consequuntur sed quasi eos explicabo et libero sint veniam unde.
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <alo-social-links [socialLinks]="project.socialLinks"></alo-social-links>
+        </mat-card-actions>
+      </mat-card>
 
-      <mat-card-content>
-        <div style="width: 100%; text-align: center;">
-          <img matCardImage style="width: 200px; margin: 0px"
-            src="assets/coderty-logo.png">
-        </div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi reprehenderit ipsa porro dolorum libero nobis, architecto
-        non voluptate! Ex non consequuntur sed quasi eos explicabo et libero sint veniam unde.
-
-      </mat-card-content>
-
-      <mat-card-actions align="end">
-        <alo-social-links [socialLinks]="project.socialLinks"></alo-social-links>
-      </mat-card-actions>
-    </mat-card>
+    </div>
   </div>
-
 </div>
