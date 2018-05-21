@@ -7,100 +7,136 @@ export class AppService {
 
   getData() {
     return {
-      "description": `Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor; hodor hodor; hodor hodor - hodor, hodor, hodor hodor. 
+      description: `Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor; hodor hodor; hodor hodor - hodor, hodor, hodor hodor. 
       Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor; hodor hodor; hodor hodor - hodor, hodor, hodor hodor. `,
-      "socialLinks": [
+      socialLinks: [
         {
-          "imgSrc": "assets/twitter.png",
-          "link": "https://twitter.com/aloDev",
-          "alt": "Twitter logo"
+          imgSrc: 'assets/twitter.png',
+          link: 'https://twitter.com/aloDev',
+          alt: 'Twitter logo'
         },
         {
-          "imgSrc": "assets/github.png",
-          "link": "https://github.com/alo",
-          "alt": "Github logo"
+          imgSrc: 'assets/github.png',
+          link: 'https://github.com/alo',
+          alt: 'Github logo'
         },
         {
-          "imgSrc": "assets/linkedin.png",
-          "link": "https://www.linkedin.com/in/alodev/",
-          "alt": "Linkedin logo"
+          imgSrc: 'assets/linkedin.png',
+          link: 'https://www.linkedin.com/in/alodev/',
+          alt: 'Linkedin logo'
         }
       ],
-      "projects":[
+      projects: [
         {
-          "title": "Coderty",
-          "desc": `Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR!`,
-          "imgSrc":"assets/coderty-logo.png",
-          "socialLinks": [
+          title: 'Coderty',
+          desc: `Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR!`,
+          imgSrc: 'assets/coderty-logo.png',
+          socialLinks: [
             {
-              "imgSrc": "assets/twitter.png",
-              "link": "https://twitter.com/aloDev",
-              "alt": "Twitter logo"
+              imgSrc: 'assets/twitter.png',
+              link: 'https://twitter.com/aloDev',
+              alt: 'Twitter logo'
             },
             {
-              "imgSrc": "assets/github.png",
-              "link": "https://github.com/alo",
-              "alt": "Github logo"
+              imgSrc: 'assets/github.png',
+              link: 'https://github.com/alo',
+              alt: 'Github logo'
             },
             {
-              "imgSrc": "assets/linkedin.png",
-              "link": "https://www.linkedin.com/in/alodev/",
-              "alt": "Linkedin logo"
+              imgSrc: 'assets/linkedin.png',
+              link: 'https://www.linkedin.com/in/alodev/',
+              alt: 'Linkedin logo'
             }
-          ],  
+          ]
         },
         {
-          "title": "Coderty",
-          "desc": `Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR!`,
-          "imgSrc":"assets/coderty-logo.png",
-          "socialLinks": [
+          title: 'Coderty',
+          desc: `Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR!`,
+          imgSrc: 'assets/coderty-logo.png',
+          socialLinks: [
             {
-              "imgSrc": "assets/twitter.png",
-              "link": "https://twitter.com/aloDev",
-              "alt": "Twitter logo"
+              imgSrc: 'assets/twitter.png',
+              link: 'https://twitter.com/aloDev',
+              alt: 'Twitter logo'
             },
             {
-              "imgSrc": "assets/github.png",
-              "link": "https://github.com/alo",
-              "alt": "Github logo"
+              imgSrc: 'assets/github.png',
+              link: 'https://github.com/alo',
+              alt: 'Github logo'
             },
             {
-              "imgSrc": "assets/linkedin.png",
-              "link": "https://www.linkedin.com/in/alodev/",
-              "alt": "Linkedin logo"
+              imgSrc: 'assets/linkedin.png',
+              link: 'https://www.linkedin.com/in/alodev/',
+              alt: 'Linkedin logo'
             }
-          ],  
+          ]
         },
         {
-          "title": "Coderty",
-          "desc": `Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR!`,
-          "imgSrc":"assets/coderty-logo.png",
-          "socialLinks": [
+          title: 'Coderty',
+          desc: `Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR!`,
+          imgSrc: 'assets/coderty-logo.png',
+          socialLinks: [
             {
-              "imgSrc": "assets/twitter.png",
-              "link": "https://twitter.com/aloDev",
-              "alt": "Twitter logo"
+              imgSrc: 'assets/twitter.png',
+              link: 'https://twitter.com/aloDev',
+              alt: 'Twitter logo'
             },
             {
-              "imgSrc": "assets/github.png",
-              "link": "https://github.com/alo",
-              "alt": "Github logo"
+              imgSrc: 'assets/github.png',
+              link: 'https://github.com/alo',
+              alt: 'Github logo'
             },
             {
-              "imgSrc": "assets/linkedin.png",
-              "link": "https://www.linkedin.com/in/alodev/",
-              "alt": "Linkedin logo"
+              imgSrc: 'assets/linkedin.png',
+              link: 'https://www.linkedin.com/in/alodev/',
+              alt: 'Linkedin logo'
             }
-          ],  
+          ]
         }
       ],
-      "title":"Angular SSR",
-      "meta":[
-        { name: 'author',   content: 'alo'},
-        { name: 'keywords', content: 'angular seo, angular 5 universal, nelacantinela'},
-        { name: 'description', content: 'Angular SEO friendly app! Enjoy' }
+      title: 'Angular SSR',
+      meta: [
+        {
+          name: 'author',
+          content: 'AlmeriaJS'
+        },
+        {
+          name: 'keywords',
+          content: 'angular seo, angular 5 universal, nelacantinela'
+        },
+        {
+          name: 'description',
+          content: 'Angular SEO friendly app! Enjoy'
+        },
+        {
+          name: 'copyright',
+          content: 'AlmeriaJS'
+        },
+        {
+          name: 'copyright',
+          content: 'AlmeriaJS'
+        },
+        {
+          property: 'og:title',
+          content: 'Angular SSR Blog'
+        },
+        {
+          property: 'og:description',
+          content: 'Angular SSR Blog'
+        },
+        {
+          property: 'og:image',
+          content: 'Angular SSR Blog'
+        },
+        {
+          property: 'og:url',
+          content: 'Angular SSR Blog'
+        },
+        {
+          property: 'og:site_name',
+          content: 'angularalmeria.com'
+        }
       ]
-    }
-    
+    };
   }
 }
