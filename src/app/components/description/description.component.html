@@ -1,14 +1,16 @@
-<mat-card>
+<mat-card class="card-margin">
   <mat-card-content>
-    <div fxLayout="row">
-      <div fxFlex="15%">
-        <img class="avatar"
-          src="../../../assets/alo.jpeg"
-          alt="">
+    <div fxLayout="row wrap">
+      <div fxFlex="O O 15%"
+        fxFlex.sm="0 0 30%"
+        fxFlex.xs="0 0 100%">
+        <img src="../../../assets/alo.jpeg"
+          alt=""/>
       </div>
-      <div fxFlex
-        fxFlexOffset="30px">
-        <h1> Hi! I'm @alo </h1>
+      <div fxFlex="O O 85%"
+        fxFlex.sm="0 0 70%"
+        fxFlex.xs="0 0 100%">
+        <h1>Hi! I'm @alo</h1>
         <div [innerHtml]="mainDescription"></div>
       </div>
     </div>
