@@ -3,13 +3,17 @@
     <div fxLayout="row wrap">
       <div fxFlex="O O 15%"
         fxFlex.sm="0 0 30%"
-        fxFlex.xs="0 0 100%">
+        fxFlex.xs="0 0 100%"
+        class="avatar">
         <img src="../../../assets/alo.jpeg"
           alt=""/>
       </div>
       <div fxFlex="O O 85%"
-        fxFlex.sm="0 0 70%"
-        fxFlex.xs="0 0 100%">
+        fxFlexOffset="5%"
+        fxFlex.sm="0 0 65%"
+        fxFlexOffset.sm="5%"
+        fxFlex.xs="0 0 100%"
+        fxFlexOffset.xs="0">
         <h1>Hi! I'm @alo</h1>
         <div [innerHtml]="mainDescription"></div>
       </div>
